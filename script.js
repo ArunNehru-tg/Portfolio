@@ -37,3 +37,12 @@ document.addEventListener('keydown', function(e) {
     e.preventDefault();  // This prevents the right-click context menu
     alert("Right-click is disabled on this page.");
 });
+
+// JavaScript to hide the preloader with a fade-out effect
+window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('fade-out');
+    setTimeout(function() {
+      preloader.style.display = 'none';
+    }, 500); // Match the transition duration
+  });
